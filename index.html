@@ -1,26 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive comments section</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Interactive comments section</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Pull dynamic content from the data.json file -->
+    <main class="main">
+      <section class="comments">
+        <div class="comment">
+          <div class="vote">
+            <button class="btn-score">
+              <img class="plus" src="/images/icon-plus.svg" alt="" />
+            </button>
 
-  <!-- Pull dynamic content from the data.json file -->
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+            <p class="vote-number">13</p>
+            <button class="btn-score">
+              <img class="minus" src="/images/icon-minus.svg" alt="" />
+            </button>
+          </div>
+          <div class="user">
+            <div class="info">
+              <div class="user-info">
+                <img
+                  class="avatar-img"
+                  src="/images/avatars/image-amyrobson.png"
+                  alt=""
+                />
+                <p class="user-name">amyrobson</p>
+                <p class="time-ago">1 month ago</p>
+              </div>
+
+              <div class="reply">
+                <img src="/images/icon-reply.svg" alt="" />
+                <button class="btn-reply">Reply</button>
+              </div>
+            </div>
+            <div class="text">
+              <p>
+                Impressive! Though it seems the drag feature could be improved.
+                But overall it looks incredible. You've nailed the design and
+                the responsiveness at various breakpoints works really well.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="comment">
+          <div class="vote">
+            <button class="btn-score">
+              <img class="plus" src="/images/icon-plus.svg" alt="" />
+            </button>
+
+            <p class="vote-number">13</p>
+            <button class="btn-score">
+              <img class="minus" src="/images/icon-minus.svg" alt="" />
+            </button>
+          </div>
+          <div class="user">
+            <div class="info">
+              <div class="user-info">
+                <img
+                  class="avatar-img"
+                  src="/images/avatars/image-maxblagun.png"
+                  alt=""
+                />
+                <p class="user-name">maxblagun</p>
+                <p class="time-ago">2 weeks ago</p>
+              </div>
+
+              <div class="reply">
+                <img src="/images/icon-reply.svg" alt="" />
+                <button class="btn-reply">Reply</button>
+              </div>
+            </div>
+            <div class="text">
+              <p>
+                Woah, your project looks awesome! How long have you been coding
+                for? I'm still new, but think I want to dive into React as well
+                soon. Perhaps you can give me an insight on where I can learn
+                React? Thanks!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="replies">
+          <div class="comment">
+            <div class="vote">
+              <button class="btn-score">
+                <img class="plus" src="/images/icon-plus.svg" alt="" />
+              </button>
+
+              <p class="vote-number">13</p>
+              <button class="btn-score">
+                <img class="minus" src="/images/icon-minus.svg" alt="" />
+              </button>
+            </div>
+            <div class="user">
+              <div class="info">
+                <div class="user-info">
+                  <img
+                    class="avatar-img"
+                    src="/images/avatars/image-ramsesmiron.png"
+                    alt=""
+                  />
+                  <p class="user-name">ramsesmiron</p>
+                  <p class="time-ago">1 weeks ago</p>
+                </div>
+
+                <div class="reply">
+                  <img src="/images/icon-reply.svg" alt="" />
+                  <button class="btn-reply">Reply</button>
+                </div>
+              </div>
+              <div class="text">
+                <p>
+                  If you're still new, I'd recommend focusing on the
+                  fundamentals of HTML, CSS, and JS before considering React.
+                  It's very tempting to jump ahead but lay a solid foundation
+                  first.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section my-comment>
+        <div class="add-my-comment">
+          <img
+            src="./images/avatars/image-juliusomo.png"
+            class="my-avatar-img"
+            alt=""
+          />
+          <textarea
+            class="text-area"
+            name=""
+            id=""
+            cols="70"
+            rows="5"
+            placeholder="Add a comment"
+          ></textarea>
+          <button class="send-btn">Send</button>
+        </div>
+      </section>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+    <script src="js/script.js"></script>
+  </body>
 </html>
